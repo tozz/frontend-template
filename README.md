@@ -3,7 +3,7 @@
 This is a basic setup for projects using React and TypeScript.  
 I keep it on GitHub for easy access, feel free to use it for anything you want.
 
-## Frameworks
+## Frameworks & Languages
 
 * React 17
 * Tailwind 2
@@ -11,17 +11,17 @@ I keep it on GitHub for easy access, feel free to use it for anything you want.
 
 ## Tooling
 
-* Webpack 5
+* esbuild
 * Jest (with `ts-jest`)
 * ESLint with recommended rules
 * Prettier
 
 # Usage
 
-Main entry is `src/js/main.tsx`, update it and remove the following;
-* `src/component.tsx`
-* `src/component.test.tsx`
-* `test/component.test.tsx`
+Main entry is `src/js/main.tsx`, I have added a component just for testing purposes.
+
+You can run a simple dev server with `yarn start` and go to the URI esbuild announces in the console.  
+This will run both `esbuild` and `postcss` in watch mode.
 
 # Tests
 
