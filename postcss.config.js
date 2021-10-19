@@ -1,7 +1,9 @@
-module.exports = {
+module.exports = (ctx) => ({
   plugins: {
+    'postcss-import': {},
+    'tailwindcss/nesting': {},
     tailwindcss: {},
-    'postcss-nesting': {},
     autoprefixer: {},
+    cssnano: ctx.env === 'production' ? { preset: ['default', { discardComments: { removeAll: true } }] } : false,
   },
-};
+});
