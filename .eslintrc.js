@@ -36,6 +36,7 @@ module.exports = {
   rules: {
     '@typescript-eslint/explicit-module-boundary-types': 0,
     '@typescript-eslint/no-non-null-assertion': 0,
+    '@typescript-eslint/no-use-before-define': ['error'],
     'import/extensions': [
       'error',
       'ignorePackages',
@@ -51,7 +52,9 @@ module.exports = {
       { devDependencies: ['**/*.test.ts', '**/*.test.tsx', 'jest.setup.ts', 'test/**'] },
     ],
     'import/prefer-default-export': 0,
+    'no-param-reassign': ['error', { ignorePropertyModificationsFor: ['draft', 'state'], props: true }],
     'no-shadow': 0,
+    'no-use-before-define': 'off',
     'react/prop-types': 0,
     'react/react-in-jsx-scope': 0,
   },

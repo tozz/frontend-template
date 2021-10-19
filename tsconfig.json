@@ -2,12 +2,12 @@
   "buildOnSave": false,
   "compileOnSave": false,
   "compilerOptions": {
-    "allowJs": true,
     "esModuleInterop": true,
-    "jsx": "react-jsx",
+    "isolatedModules": true,
+    "jsx": "react",
     "lib": [
       "dom",
-      "es2019"
+      "es2020"
     ],
     "module": "esnext",
     "moduleResolution": "Node",
@@ -18,7 +18,7 @@
   },
   "exclude": [
     "coverage",
-    "build",
-    "node_modules"
+    "node_modules",
+    "www"
   ]
 }

@@ -30,8 +30,9 @@ node_modules/
 # Optional eslint cache
 .eslintcache
 
-# Webpack build output
-dist
+# Generated output
+www/main.js
+www/tailwind.css
 
 # IntelliJ config
 .idea

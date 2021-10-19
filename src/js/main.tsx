@@ -1,5 +1,5 @@
+import React from 'react';
 import ReactDOM from 'react-dom';
-import '../css/tailwind.css';
 import { Component } from './component';
 
 document.addEventListener('readystatechange', () => {
