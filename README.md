@@ -5,8 +5,8 @@ I keep it on GitHub for easy access, feel free to use it for anything you want.
 
 ## Frameworks & Languages
 
-* React 17
-* Tailwind 2
+* React 18
+* Tailwind 3
 * TypeScript 4
 
 ## Tooling
