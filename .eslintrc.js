@@ -60,6 +60,21 @@ module.exports = {
       'error',
       { devDependencies: ['**/*.test.ts', '**/*.test.tsx', 'jest.setup.ts', 'test/**'] },
     ],
+    'import/order': [
+      'error',
+      {
+        alphabetize: { order: 'asc', caseInsensitive: true },
+        'newlines-between': 'never',
+        pathGroups: [
+          {
+            pattern: 'react',
+            group: 'builtin',
+            position: 'before',
+          },
+        ],
+        pathGroupsExcludedImportTypes: ['react'],
+      },
+    ],
     'import/prefer-default-export': 0,
     'no-param-reassign': ['error', { ignorePropertyModificationsFor: ['draft', 'state'], props: true }],
     'no-shadow': 0,
