@@ -4,11 +4,12 @@ module.exports = {
   plugins: ['@typescript-eslint', 'react', 'prettier'],
   extends: [
     'plugin:react/recommended',
+    'plugin:react-hooks/recommended',
     'plugin:@typescript-eslint/recommended',
     'plugin:import/errors',
     'plugin:import/warnings',
     'plugin:import/typescript',
-    'prettier',
+    'plugin:prettier/recommended',
   ],
   parserOptions: {
     ecmaVersion: 2021,
@@ -22,10 +23,7 @@ module.exports = {
   },
   settings: {
     'import/resolver': {
-      node: {
-        paths: ['public'],
-        extensions: ['.js', '.ts', '.jsx', '.tsx', '.mjs'],
-      },
+      typescript: {},
     },
     react: {
       pragma: 'React',
@@ -33,6 +31,7 @@ module.exports = {
     },
   },
   rules: {
+    '@typescript-eslint/consistent-type-definitions': 1,
     '@typescript-eslint/consistent-type-imports': 1,
     '@typescript-eslint/explicit-module-boundary-types': 0,
     '@typescript-eslint/no-non-null-assertion': 0,
